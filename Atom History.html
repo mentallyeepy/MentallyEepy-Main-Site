@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Verdana", sans-serif;
+}
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}</style>
+
+<!--Dropdown-->
+<style>
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+   <style>
+       .blink {
+           animation: blinker 1s linear infinite;
+           color: black;
+           font-family: Tahoma;
+       }
+       @keyframes blinker {
+           50% { opacity: 0; }
+       }
+   </style>
+   <style>
+       h1 {
+           font-family: 'Verdana';
+           font-size: 30px;
+           color: black;
+       }
+       h2 {
+           font-family: 'Verdana';
+           font-size: 25px;
+           color: black;
+       }
+       p {
+           font-family: 'Tahoma';
+           font-size: 18px;
+           color: black;
+       }
+   </style>
+   <style>
+       h1 {text-align: left;}
+       h2 {text-align: left;}
+       p {text-align: left;}
+       div {text-align: left;}
+   </style>
+
+<style>
+  .custom-button {
+    background-color: #F0F0F0;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Tahoma';
+    cursor: pointer;
+  }
+
+  .custom-button:hover {
+    background-color: #E0E0E0;
+  }
+</style>
+
+<title>The History of the Atom Model</title>
+</head>
+<body>
+
+<!--Tracey Sanchez is the owner. I am the owner, do not touch my website code, God bless, may you live long and prosper, goodbye now.-->
+
+<!-- Side navigation -->
+<div class="sidebar">
+<a href="Home.html">Home</a>
+<a href="About.html">About</a>
+<div class="dropdown"><a class="active" href="Science.html">Science
+<div class="dropdown-content"><a class="active" href="Atom History.html">Atom History</a><a href="Forensics.html">Forensics</a></div>
+</a>
+</div>
+</div>
+
+
+<div class="content">
+<h1>Atom Model Evolution</h1>
+<p>This is the evolution of the <b>Atom Model</b> from Dalton to Bohr</p>
+<div style="text-align: left;">
+<img src="Content\Science\Atom History\Dalton-Schrodinger_Model.webp" alt="Evolution of the Atom" style="width: auto; height: 300px;">
+</div>
+
+<!--First model-->
+<h2>Dalton's Model</h2>
+<p>John Dalton (1766-1844) was an English chemist and physicist who made many contributions to chemistry. This model was based on his experiments he did in combining elements.</p>
+<p>The Dalton Model consisted of a sphere, which varied in size, colour, mass, etc. Different elements had different properties.</p>
+<div style="text-align: left;">
+<img src="Content\Science\Atom History\Dalton_atomic_theory.jpg" alt="Water chemical structure displayed as one midsize red ball for oxygen, and two small-sized silver balls for the two hydrogen atoms." style="width: auto; height: 300px;">
+</div>
+
+<!--Second model-->
+<h2>Thomson's Model</h2>
+<p>Joseph John Thomson (1856-1940) was an English physicist who discovered the electron. In the 1890s, Thomson was experimenting with beams of particles produced in a vacuum tube.</p>
+<p>The Thomson Model consisted of the same sphere Dalton theorised to be the atom, except it had no different properties when compared to other elements, except the number of electrons wedged inside of it.</p>
+<div style="text-align: left;">
+<img src="Content\Science\Atom History\thompson_atomic_model.webp" style="width: auto; height: 300px;">
+</div>
+
+<!--Third Model-->
+<h2>Rutherford's Model</h2>
+<p>Ernest Rutherford (1871-1937) began working with radioactive substances in England with J.J. Thomson. Rutherford later did research at the McGill University in Montreal, where he performed an experiment which led to the discovery of the nucleus.</p>
+<!--Stop looking at me-->
+<p>The Rutherford Model consists of the positively-charged nucleus in the center and negatively charged electrons orbiting around the nucleus.</p>
+<div style="text-align: left;">
+<img src="Content\Science\Atom History\rutherford_model.svg" style="width: auto; height: 300px;">
+</div>
+
+<!--Fourth Model-->
+<h2>Bohr's Model</h2>
+<p>Neils Bohr (1885-1962) was a Danish physicist who worked under Rutherford in England. He proposed that electrons surrounded the nucleus in specific energy levels. He found evidence for this by examining the light released by hydrogen atoms when they are made to glow in a tube.</p>
+<p>This second-to-last model consists of the nucleus in the center with electrons orbiting the nucleus. Sort of like the Rutherford Model, but on seperate "rings" which represent energy levels.</p>
+<div style="text-align: left;">
+<img src="Content\Science\Atom History\bohr_theory.png" style="width: auto; height: 300px;">
+</div>
+
+<h2 class="blink">The End!</h2>
+<p>That about concludes our journey through the history of the atom. Thank you for visiting my site!</p>
+<a href="Home.html">
+<div style="text-align: left;">
+<button class="custom-button">Home</button>
+</div>
+</a>
+</div>
+<!--Tracey Sanchez is the owner. I am the owner, do not touch my website code, God bless, may you live long and prosper, goodbye now.-->
+
+</body>
+	</html>
